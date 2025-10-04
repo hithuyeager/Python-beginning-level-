@@ -1,0 +1,24 @@
+student=["eren","mikasa","levi","armin"]
+ptemp=[]
+atemp=[]
+while True:
+ rep=input("enter students name who are present one by one and press exit after done").strip().lower()
+ if rep in student :
+     ptemp.append(rep)
+ elif rep=="exit":
+     break
+ else:
+     print("invalid name")
+for s in student:
+ if s not in ptemp:
+     atemp.append(s)
+
+print("total present in class",len(ptemp))
+print("total number of absent",len(atemp))
+print("names of people present") 
+for i in ptemp:
+ print(i)
+print("names of people absent")
+for i in atemp:
+ print(i)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
